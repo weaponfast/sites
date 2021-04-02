@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample{
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-auto-rows: 2fr 1fr ;
+
+
+        }
+        .sample_item{
+            background: #0175a7;
+            margin: 5px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .sample_item:first-child{background: #090;}
+        .sample_item:last-child{background: #c00;}
+        .sample_item:before{content: "ТЕКСТ";}
+        .sample_item:nth-child(1){
+            grid-column: 1/4;
+            grid-row: 1/4;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="sample">
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+        <div class="sample_item"></div>
+    </div>
+</body>
+</html>

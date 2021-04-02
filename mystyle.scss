@@ -1,0 +1,12 @@
+@mixin transform($sss) {
+    -moz-transform: $sss;
+    -o-transform: $sss;
+    -webkit-transform: $sss;
+    transform: $sss;
+}
+div:nth-child(1){
+    @include transform(scale (2));
+}
+div:nth-child(2){
+    @include transform(translatex(20px));
+}

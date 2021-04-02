@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./style/rib.css">
+<link rel="stylesheet" href="./style/target.css">
+<style>
+    body {
+margin: 0;
+font-family: 'Ubuntu', sans-serif;
+}
+section {
+margin: 0 auto;
+max-width: 660px;
+padding: 0 20px;
+}
+h1 {
+font-weight: normal;
+position: relative;
+background: #F4F9FA;
+width: 50%;
+color: #F8463F;
+text-align: center;
+padding: 10px 20px;
+margin: 20px auto 40px;
+text-transform: uppercase;
+border-radius: 2px;
+}
+h1:before,
+h1:after {
+content: "";
+position: absolute;
+top: -6px;
+border: 18px solid #DCF4F4;
+}
+h1:before {
+left: -36px;
+border-right-width: 18px;
+border-left-color: transparent;
+}
+h1:after {
+right: -36px;
+border-left-width: 18px;
+border-right-color: transparent;
+}
+h1 span:before,
+h1 span:after {
+content: "";
+position: absolute;
+border-style: solid;
+border-color: #A7CECC transparent transparent transparent;
+top: -6px;
+transform: rotate(180deg);
+}
+h1 span:before {
+left: 0;
+border-width: 6px 0 0 6px;
+}
+h1 span:after {
+right: 0;
+border-width: 6px 6px 0 0;
+}
+.ribbon {
+height: 188px;
+position: relative;
+margin-bottom: 30px;
+background: url(https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg);
+background-size: cover;
+text-transform: uppercase;
+color: white;
+}
+.ribbon{
+    width: 60px;
+    position: absolute;
+    padding: 10px 0;
+    background: #f47530;
+    text-align: center;
+    top: -6px;
+    left: 25px;
+    border-top-left-radius: 3px;
+}
+.ribbon2:before{
+    height: 0;
+    width: 0;
+    right: -5.5px;
+    top: 0.1px;
+    border-bottom: 6px solid #8d5a2a;
+    border-right: 6px solid transparent;
+}
+.ribbon2:after{
+    height: 0;
+    width: 0;
+    bottom: -29.5px;
+    left: 0;
+    border-left: 30px solid #f47530;
+    border-right: 30px solid #f47530;
+    border-bottom: 30px solid transparent;
+}
+.ribbon2:after, .ribbon2:before{
+    content: "";
+    position: absolute;
+}
+.ribbon6{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    background: #57dd57;
+    text-align: center;
+    border: 1px dashed;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 3px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<h1><span>CSS3 ленточки</span></h1>
+<div class="ribbons-wrapper">
+<div class="ribbon" id="one">
+<span class="ribbon1" ><span>Скидка 10%</span></span>
+</div>
+<div class="ribbon" id="two">
+<span class="ribbon2">А<br>К<br>Ц<br>И<br>Я</span>
+</div>
+<div class="ribbon">
+<span class="ribbon3">Скидка 10%</span>
+</div>
+<div class="ribbon">
+<span class="ribbon4">Скидка 10%</span>
+</div>
+<div class="ribbon">
+<span class="ribbon5">Скидка 10%</span>
+</div>
+<div class="ribbon">
+<div class="wrap">
+<span class="ribbon6">Скидка 10%</span>
+</div>
+</div>
+</div>
+</section>
+
+</body>
+
+</html>

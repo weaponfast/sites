@@ -1,0 +1,13 @@
+div:nth-child(1) {
+  -moz-transform: scale 2;
+  -o-transform: scale 2;
+  -webkit-transform: scale 2;
+  transform: scale 2;
+}
+
+div:nth-child(2) {
+  -moz-transform: translatex(20px);
+  -o-transform: translatex(20px);
+  -webkit-transform: translatex(20px);
+  transform: translatex(20px);
+}
